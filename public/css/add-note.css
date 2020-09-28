@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(125, 213, 111, 0.85),
+    rgba(40, 180, 135, 0.85)
+  );
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.add-note__form-wrapper {
+  margin: auto;
+  width: fit-content;
+}
+
+.add-note__form {
+  background-image: url('../images/yellow-paper.png');
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  padding: 45px;
+  height: fit-content;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.87) !important;
+}
+
+.add-note__date,
+.add-note__img {
+  font-size: 1rem !important;
+  font-family: 'Courier New', Courier, monospace;
+  width: 35%;
+  height: 30px !important;
+  margin-right: 2%;
+  margin-bottom: 5% !important;
+  display: inline-block;
+}
+
+.add-note__subject {
+  font-size: 1rem !important;
+
+  font-family: 'Courier New', Courier, monospace;
+  width: 35%;
+  margin-bottom: 5% !important;
+  height: 50px !important;
+}
+
+.add-note__name {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 5% !important;
+  height: 50px !important;
+  width: 72.5%;
+  font-size: 1rem !important;
+}
+
+.add-note__note {
+  font-size: 1rem !important;
+
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 5% !important;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.add-note__submit {
+  font-size: 1rem !important;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 8px !important;
+  padding: 15px !important;
+}
+
+.main-header {
+  margin-bottom: 15%;
+  width: 100%;
+  background-color: rgb(1, 160, 1);
+}
+
+.main-header__items {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0px;
+  margin-left: 10%;
+  width: 50%;
+  text-align: left;
+}
+
+.main-header__item {
+  display: inline-block;
+  margin-right: 10%;
+}
+
+.main-header__item-link {
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.main-header__item-link:hover {
+  color: black;
+}

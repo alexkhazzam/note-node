@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/authenticate.css" />
+    <link rel="stylesheet" href="/bootstrap-responsive.css" ; />
+    <link rel="stylesheet" href="/bootstrap-responsive.min.css" ; />
+    <link rel="stylesheet" href="/bootstrap.css" ; />
+    <link rel="stylesheet" href="/bootstrap.min.css" ; />
+  </head>
+  <body>
+    <h1 class="main-header">Create a Note-Spree Acount For Free!</h1>
+    <form class="register-form" action="/register" method="POST">
+      <input
+        spellcheck="true"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+        class="register-form__email"
+        name="email"
+      />
+      <label for="email" class="email__warning"
+        >We will never share your email with anyone.</label
+      >
+      <input
+        spellcheck="true"
+        type="text"
+        placeholder="First Name"
+        name="name"
+        required
+        class="register-form__name"
+      />
+      <input
+        name="lastname"
+        spellcheck="true"
+        type="text"
+        placeholder="Last Name"
+        required
+        class="register-form__lastname"
+      />
+      <input
+        name="username"
+        spellcheck="true"
+        type="text"
+        placeholder="Username"
+        required
+        class="register-form__username"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        required
+        name="password"
+        class="register-form__password"
+      />
+      <input
+        name="confirmPassword"
+        spellcheck="true"
+        type="password"
+        placeholder="Confirm Password"
+        required
+        class="register-form__password"
+      />
+      <button
+        type="submit"
+        type="button"
+        class="btn btn-info register-form__submit"
+      >
+        Create Account
+      </button>
+      <p class="login__link">Already Registered? Click <a>Here</a> to login.</p>
+    </form>
+  </body>
+</html>

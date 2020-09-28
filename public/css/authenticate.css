@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(125, 213, 111, 0.85),
+    rgba(40, 180, 135, 0.85)
+  );
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.register-form {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.register-form__email,
+.register-form__name,
+.register-form__lastname,
+.register-form__username,
+.register-form__submit,
+.register-form__password {
+  box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.87) !important;
+  font-family: 'Courier New', Courier, monospace;
+  display: block !important;
+  font-size: 1rem !important;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2% !important;
+  width: 50%;
+  height: 35px !important;
+}
+
+.register-form__submit {
+  width: fit-content;
+  margin-top: 4%;
+}
+
+.register-form__email {
+  margin-bottom: 5px !important;
+}
+
+.main-header {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding-top: 8%;
+  color: white;
+}
+
+.login__link {
+  text-align: center;
+  color: white;
+}
+
+.login__link a {
+  font-size: 1rem;
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  color: black;
+}
+
+.login__link a:hover {
+  color: black;
+}
+
+.email__warning {
+  margin-top: 0px;
+  width: 50%;
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  color: black;
+  margin-bottom: 2%;
+}

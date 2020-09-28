@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/add-note.css" />
+    <link rel="stylesheet" href="/bootstrap-responsive.css" ; />
+    <link rel="stylesheet" href="/bootstrap-responsive.min.css" ; />
+    <link rel="stylesheet" href="/bootstrap.css" ; />
+    <link rel="stylesheet" href="/bootstrap.min.css" ; />
+  </head>
+  <body>
+    <div class="add-note__wrapper">
+      <header class="main-header">
+        <navbar class="main-header__navbar">
+          <ul class="main-header__items">
+            <li class="main-header__item">
+              <a class="main-header__item-link">Add Note</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__item-link">Notes</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__item-link">Logout</a>
+            </li>
+          </ul>
+        </navbar>
+      </header>
+      <div class="add-note__form-wrapper">
+        <form class="add-note__form" action="/notes" method="POST">
+          <input
+            type="text"
+            class="add-note__name"
+            placeholder="Title"
+            spellcheck="true"
+          />
+          <input type="date" required class="add-note__date" />
+          <input
+            spellcheck="true"
+            type="url"
+            placeholder="Note Image (Optional)"
+            class="add-note__img"
+          />
+          <input
+            spellcheck="true"
+            type="text"
+            placeholder="Subject"
+            required
+            class="add-note__subject"
+          />
+          <textarea
+            spellcheck="true"
+            placeholder="Note"
+            required
+            class="add-note__note"
+          ></textarea>
+          <button
+            type="submit"
+            type="button"
+            class="btn btn-info add-note__submit"
+          >
+            Add Note
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

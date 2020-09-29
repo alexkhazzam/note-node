@@ -104,3 +104,9 @@ body {
     margin-top: 20% !important;
   }
 }
+
+@media (max-width: 500px) {
+  html {
+    height: 130%;
+  }
+}

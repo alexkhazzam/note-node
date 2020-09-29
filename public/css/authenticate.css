@@ -99,9 +99,11 @@ body {
   .email__warning {
     width: 100%;
     font-size: 0.6rem;
+    margin-bottom: 8% !important;
   }
   .register-form__email {
     margin-top: 20% !important;
+    margin-bottom: 5px !important;
   }
 }
 

@@ -9,6 +9,7 @@ exports.getSlash = (req, res, next) => {
 };
 
 exports.postRegister = (req, res, next) => {
+  let invalidResults = 0;
   const credentialObj = {
     email: req.body.email,
     name: req.body.name,
@@ -17,7 +18,13 @@ exports.postRegister = (req, res, next) => {
     password: req.body.password,
     Id: Math.random(),
   };
-  const register = new Register.CreateAccount();
+  const register = new Register.CreateAccount(
+    credentialObj.email,
+    credentialObj.name,
+    credentialObj.lastname,
+    credentialObj.username,
+    credentialObj.password
+  );
   const emailUnique = register.verifyEmail(credentialObj.email);
   const usernameUnique = register.verifyUsername(credentialObj.username);
   const passwordsMatch = register.verifyPasswords(
@@ -26,11 +33,22 @@ exports.postRegister = (req, res, next) => {
   );
   if (!emailUnique) {
     console.log('email not unique');
+    invalidResults++;
     return;
   }
   if (!usernameUnique) {
     console.log('username not unique');
+    invalidResults++;
     return;
+  }
+  if (!passwordsMatch) {
+    console.log('passwords do not match');
+    invalidResults++;
+    return;
+  }
+  if (invalidResults === 0) {
+    register.saveCredentials();
+    console.log('done');
   }
 };
 

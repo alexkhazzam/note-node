@@ -82,3 +82,25 @@ body {
   color: black;
   margin-bottom: 2%;
 }
+
+@media (max-width: 1024px) {
+  .register-form__email,
+  .register-form__name,
+  .register-form__lastname,
+  .register-form__username,
+  .register-form__submit,
+  .register-form__password {
+    width: 100%;
+    margin-bottom: 8% !important;
+  }
+  .register-form {
+    width: 85%;
+  }
+  .email__warning {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .register-form__email {
+    margin-top: 20% !important;
+  }
+}

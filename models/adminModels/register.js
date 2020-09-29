@@ -59,6 +59,7 @@ exports.CreateAccount = class {
       lastname: this.userLastname,
       username: this.userUsername,
       password: this.userPassword,
+      id: Math.random(),
     };
     const userInfo = fs.readFileSync(
       path.join(__dirname, '../', '../', 'data', 'users.json'),
